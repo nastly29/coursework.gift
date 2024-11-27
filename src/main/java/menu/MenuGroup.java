@@ -6,7 +6,12 @@ import menu.helpers.UserInputHelper;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class MenuGroup implements MenuItem {
+    private static final Logger logger = LogManager.getLogger(MenuGroup.class);
+
     private String name;
     private boolean isMainMenu;
     private List<MenuItem> items = new ArrayList<>();
@@ -29,13 +34,16 @@ public class MenuGroup implements MenuItem {
     public void execute() {
         if (name.equals("Меню дій з подарунком") && !Gift.exists()) {
             System.out.println("Подарунок ще не створено. Створіть подарунок, щоб отримати доступ до цього меню.");
+            logger.warn("Спроба доступу до меню без створеного подарунка.");
             return;
         }
 
         while (true) {
             printMenu();
             int choice = UserInputHelper.promptInt("Ваш вибір (0 для виходу) -> ");
+            logger.info("Користувач зробив вибір: {} в меню {}.", choice, name);
             if (processChoice(choice)) {
+                logger.info("Користувач вийшов з меню: {}.", name);
                 break;
             }
         }
@@ -63,6 +71,7 @@ public class MenuGroup implements MenuItem {
         if (choice == 0) {
             if (isMainMenu) {
                 System.out.println("\nПрограму завершено.");
+                logger.info("Програму завершено користувачем через головне меню.");
             }
             return true;
         } else if (choice > 0 && choice <= items.size()) {

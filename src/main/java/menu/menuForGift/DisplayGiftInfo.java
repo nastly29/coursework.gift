@@ -7,7 +7,11 @@ import menu.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class DisplayGiftInfo implements MenuItem {
+    private static final Logger logger = LogManager.getLogger(DisplayGiftInfo.class);
 
     @Override
     public String name() {
@@ -16,10 +20,14 @@ public class DisplayGiftInfo implements MenuItem {
 
     @Override
     public void execute() {
+        logger.info("Користувач почав перегляд інформації про подарунок.");
+
         Gift gift = Gift.getInstance(null, null);
         List<Sweets> sweets = new ArrayList<>(gift.getSweets());
         System.out.println("\n---Інформація про подарунок---");
         System.out.println(gift);
+        logger.info("Інформація про подарунок: {}", gift);
+
         getTotalPrice(sweets);
         getTotalWeight(sweets);
     }
@@ -30,6 +38,7 @@ public class DisplayGiftInfo implements MenuItem {
             total+=sweet.getPrice();
         }
         System.out.println("Загальна ціна:" + total +" г");
+        logger.info("Загальна ціна подарунка: {} грн", total);
     }
 
     public void getTotalWeight(List<Sweets> sweets) {
@@ -38,5 +47,6 @@ public class DisplayGiftInfo implements MenuItem {
             total+=sweet.getWeight();
         }
         System.out.println("Загальна вага:" + total + " грн");
+        logger.info("Загальна вага подарунка: {} г", total);
     }
 }

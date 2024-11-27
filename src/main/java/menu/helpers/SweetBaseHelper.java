@@ -1,19 +1,28 @@
 package menu.helpers;
+
 import gift.sweets.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SweetBaseHelper {
+    private static final Logger logger = LogManager.getLogger(SweetBaseHelper.class);
+    private static final Logger errorLogger = LogManager.getLogger("ErrorLogger");
+
     private static String SWEETS_DATABASE_FILE = "sweets_database.txt";
 
     public static void setDatabaseFile(String filePath) {
         SWEETS_DATABASE_FILE = filePath;
+        logger.info("Файл бази даних оновлено: {}", SWEETS_DATABASE_FILE);
     }
 
     public static List<Sweets> loadSweetsFromFile() {
         List<Sweets> sweetsList = new ArrayList<>();
+
+        logger.info("Завантаження солодощів з файлу: {}", SWEETS_DATABASE_FILE);
 
         try (BufferedReader reader = new BufferedReader(new FileReader(SWEETS_DATABASE_FILE))) {
             String line;
@@ -24,15 +33,15 @@ public class SweetBaseHelper {
                         sweetsList.add(sweet);
                     }
                 } catch (Exception e) {
-                    System.out.println("Не вдалося обробити рядок: " + line + ". Причина: " + e.getMessage());
+                    logger.error("Не вдалося обробити рядок: {}. Причина: {}", line, e.getMessage(), e);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Помилка читання з файлу: " + e.getMessage());
+            logger.error("Помилка читання з файлу: {}", SWEETS_DATABASE_FILE, e);
         }
 
         if (sweetsList.isEmpty()) {
-            System.out.println("Файл бази даних порожній.");
+            logger.warn("Файл бази даних порожній.");
         }
         return sweetsList;
     }
@@ -40,7 +49,7 @@ public class SweetBaseHelper {
     public static Sweets parseSweetFromLine(String line) {
         String[] parts = line.split("\\|");
         if (parts.length < 6) {
-            System.out.println("Неправильний формат рядка: " + line);
+            logger.warn("Неправильний формат рядка: {}", line);
             return null;
         }
 
@@ -54,17 +63,16 @@ public class SweetBaseHelper {
                 case "jelly" -> parseJelly(parts, generalSweets);
                 case "gingerbread" -> parseGingerbread(parts, generalSweets);
                 default -> {
-                    System.out.println("Невідомий тип солодощів: " + generalSweets.getSweetType());
+                    logger.warn("Невідомий тип солодощів: {}", generalSweets.getSweetType());
                     yield null;
                 }
             };
         } catch (Exception e) {
-            System.out.println("Помилка розбору рядка: " + line + " - " + e.getMessage());
+            logger.error("Помилка розбору рядка: {}. Причина: {}", line, e.getMessage(), e);
             return null;
         }
     }
 
-    // Метод для розбору загальних властивостей
     private static Sweets parseCommonProperties(String[] parts) {
         try {
             int code = Integer.parseInt(parts[0].trim());
@@ -76,12 +84,11 @@ public class SweetBaseHelper {
 
             return new Sweets(code, name, weight, sugarContent, price, type);
         } catch (Exception e) {
-            System.out.println("Помилка розбору загальних властивостей: " + e.getMessage());
+            logger.error("Помилка розбору загальних властивостей: {}", e.getMessage(), e);
             return null;
         }
     }
 
-    // Метод для розбору Candy
     public static Candy parseCandy(String[] parts, Sweets generalSweets) {
         try {
             String candyFilling = parts[6].split(":")[1].trim();
@@ -89,12 +96,10 @@ public class SweetBaseHelper {
             return new Candy(generalSweets.getCode(), generalSweets.getName(), generalSweets.getWeight(),
                     generalSweets.getSugarContent(), generalSweets.getPrice(), candyFilling, candyType);
         } catch (Exception e) {
-            System.out.println("Помилка розбору цукерок: " + e.getMessage());
+            logger.error("Помилка розбору цукерок: {}", e.getMessage(), e);
             return null;
         }
     }
-
-    // Метод для розбору Chocolate
     public static Chocolate parseChocolate(String[] parts, Sweets generalSweets) {
         try {
             double cocoaPercentage = Double.parseDouble(parts[6].split(":")[1].trim());
@@ -103,12 +108,11 @@ public class SweetBaseHelper {
             return new Chocolate(generalSweets.getCode(), generalSweets.getName(), generalSweets.getWeight(),
                     generalSweets.getSugarContent(), generalSweets.getPrice(), cocoaPercentage, chocolateFilling, chocolateType);
         } catch (Exception e) {
-            System.out.println("Помилка розбору шоколаду: " + e.getMessage());
+            logger.error("Помилка розбору шоколаду: {}", e.getMessage(), e);
             return null;
         }
     }
 
-    // Метод для розбору Jelly
     public static Jelly parseJelly(String[] parts, Sweets generalSweets) {
         try {
             String fruityTaste = parts[6].split(":")[1].trim();
@@ -116,12 +120,11 @@ public class SweetBaseHelper {
             return new Jelly(generalSweets.getCode(), generalSweets.getName(), generalSweets.getWeight(),
                     generalSweets.getSugarContent(), generalSweets.getPrice(), fruityTaste, jellyShape);
         } catch (Exception e) {
-            System.out.println("Помилка розбору мармеладу: " + e.getMessage());
+            logger.error("Помилка розбору мармеладу: {}", e.getMessage(), e);
             return null;
         }
     }
 
-    // Метод для розбору Gingerbread
     public static Gingerbread parseGingerbread(String[] parts, Sweets generalSweets) {
         try {
             String gingerbreadShape = parts[6].split(":")[1].trim();
@@ -129,12 +132,11 @@ public class SweetBaseHelper {
             return new Gingerbread(generalSweets.getCode(), generalSweets.getName(), generalSweets.getWeight(),
                     generalSweets.getSugarContent(), generalSweets.getPrice(), gingerbreadShape, isIced);
         } catch (Exception e) {
-            System.out.println("Помилка розбору пряників: " + e.getMessage());
+            logger.error("Помилка розбору пряника: {}", e.getMessage(), e);
             return null;
         }
     }
 
-    //Метод для запису у файл
     private static void writeToFile(List<Sweets> sweetsList, boolean append) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(SWEETS_DATABASE_FILE, append))) {
             for (Sweets sweet : sweetsList) {
@@ -142,18 +144,19 @@ public class SweetBaseHelper {
                 writer.write("\n");
             }
         } catch (IOException e) {
-            System.out.println("Помилка запису у файл: " + e.getMessage());
+            logger.error("Помилка запису у файл: {}", SWEETS_DATABASE_FILE, e);
         }
     }
 
-    //Метод для перезапису вмісту файла
     public static void updateContent(List<Sweets> sweetsList) {
         writeToFile(sweetsList, false);
+        logger.info("Вміст бази даних оновлено.");
     }
 
     public static void saveSweet(Sweets sweet) {
-        List<Sweets> singleSweetList =  new ArrayList<>();
+        List<Sweets> singleSweetList = new ArrayList<>();
         singleSweetList.add(sweet);
         writeToFile(singleSweetList, true);
+        logger.info("Солодощі збережено до бази даних: {}", sweet);
     }
 }

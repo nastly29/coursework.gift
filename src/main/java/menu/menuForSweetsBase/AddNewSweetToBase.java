@@ -5,9 +5,14 @@ import menu.MenuItem;
 import menu.helpers.SweetBaseHelper;
 import menu.helpers.UserInputHelper;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.List;
 
 public class AddNewSweetToBase implements MenuItem {
+    private static final Logger logger = LogManager.getLogger(AddNewSweetToBase.class);
+
     @Override
     public String name() {
         return "Додати нові солодощі";
@@ -15,6 +20,8 @@ public class AddNewSweetToBase implements MenuItem {
 
     @Override
     public void execute() {
+        logger.info("Користувач почав додавання нових солодощів до бази.");
+
         while (true) {
             System.out.println("\nВиберіть тип солодощів для додавання (або 0 для виходу): ");
             System.out.println("1. Цукерка\n2. Шоколад\n3. Мармелад\n4. Пряник");
@@ -22,11 +29,13 @@ public class AddNewSweetToBase implements MenuItem {
 
             if (choice == 0) {
                 System.out.println("\nВихід з режиму додавання солодощів.");
+                logger.info("Користувач завершив додавання солодощів.");
                 break;
             }
 
             if (choice < 1 || choice > 4) {
                 System.out.println("Невірний вибір. Введіть число від 1 до 4 або 0 для виходу.");
+                logger.warn("Користувач ввів некоректний вибір: {}", choice);
                 continue;
             }
 

@@ -1,0 +1,558 @@
+2024-11-26 22:17:18 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-26 22:17:18 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:17) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:69) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:38) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:69) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:38) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-26 22:25:26 [main] INFO  main.LoggingTest - This is an INFO message. Application is running normally.
+2024-11-26 22:25:26 [main] WARN  main.LoggingTest - This is a WARN message. Something might need attention.
+2024-11-26 22:25:26 [main] ERROR main.LoggingTest - This is an ERROR message. Critical issue occurred: / by zero
+java.lang.ArithmeticException: / by zero
+	at main.LoggingTest.main(LoggingTest.java:18) [classes/:?]
+2024-11-26 22:46:29 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-26 22:46:29 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:17) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:69) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:38) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:69) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:38) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-26 23:08:36 [main] ERROR menu.helpers.UserInputHelper - Неправильне введення для цілого числа: 2,6
+2024-11-26 23:15:04 [main] ERROR ErrorLogger - Неправильне введення для цілого числа: 2,5
+2024-11-26 23:16:17 [main] ERROR ErrorLogger - Неправильне введення для цілого числа: 2,4
+2024-11-27 08:49:09 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 2
+2024-11-27 08:49:09 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 2 в меню Головне меню.
+2024-11-27 08:49:09 [main] WARN  menu.MenuGroup - Спроба доступу до меню без створеного подарунка.
+2024-11-27 08:49:11 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 1
+2024-11-27 08:49:11 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 1 в меню Головне меню.
+2024-11-27 08:49:11 [main] INFO  menu.menuForGift.CreateGift - Користувач почав створення подарунка.
+2024-11-27 08:49:35 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів коректний рядок: Подарунок на день народження
+2024-11-27 08:49:35 [main] INFO  menu.menuForGift.CreateGift - Назва подарунка: Подарунок на день народження
+2024-11-27 08:49:43 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів коректний рядок: Білий
+2024-11-27 08:49:43 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів правильний колір: Білий
+2024-11-27 08:49:43 [main] INFO  menu.menuForGift.CreateGift - Колір коробки: Білий
+2024-11-27 08:49:51 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів коректний рядок: Рожевий
+2024-11-27 08:49:51 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів правильний колір: Рожевий
+2024-11-27 08:49:51 [main] INFO  menu.menuForGift.CreateGift - Колір стрічки: Рожевий
+2024-11-27 08:49:59 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів коректний рядок: З днем народження!
+2024-11-27 08:49:59 [main] INFO  menu.menuForGift.CreateGift - Повідомлення на упаковці: З днем народження!
+2024-11-27 08:49:59 [main] INFO  menu.menuForGift.CreateGift - Подарунок успішно створено з назвою: Подарунок на день народження
+2024-11-27 08:50:05 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 1
+2024-11-27 08:50:05 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 1 в меню Головне меню.
+2024-11-27 08:50:05 [main] INFO  menu.menuForGift.CreateGift - Користувач почав створення подарунка.
+2024-11-27 08:50:05 [main] WARN  menu.menuForGift.CreateGift - Спроба створити подарунок, коли він вже існує.
+2024-11-27 08:50:09 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 2
+2024-11-27 08:50:09 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 2 в меню Головне меню.
+2024-11-27 08:50:23 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 1
+2024-11-27 08:50:23 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 1 в меню Меню дій з подарунком.
+2024-11-27 08:50:23 [main] INFO  menu.menuForGift.AddSweetToGift - Користувач розпочав додавання солодощів до подарунка.
+2024-11-27 08:50:23 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:50:23 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForGift.AddSweetToGift.execute(AddSweetToGift.java:27) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:50:26 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 1
+2024-11-27 08:50:26 [main] WARN  menu.menuForGift.AddSweetToGift - Солодощі з кодом 1 не знайдено.
+2024-11-27 08:50:27 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:50:27 [main] INFO  menu.menuForGift.AddSweetToGift - Солодощі з кодом 3 успішно додано до подарунка.
+2024-11-27 08:50:27 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 6
+2024-11-27 08:50:27 [main] INFO  menu.menuForGift.AddSweetToGift - Солодощі з кодом 6 успішно додано до подарунка.
+2024-11-27 08:50:28 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 2
+2024-11-27 08:50:28 [main] WARN  menu.menuForGift.AddSweetToGift - Солодощі з кодом 2 не знайдено.
+2024-11-27 08:50:30 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 0
+2024-11-27 08:50:30 [main] INFO  menu.menuForGift.AddSweetToGift - Користувач завершив додавання солодощів до подарунка.
+2024-11-27 08:50:32 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 2
+2024-11-27 08:50:32 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 2 в меню Меню дій з подарунком.
+2024-11-27 08:50:32 [main] INFO  menu.menuForGift.DisplayGiftInfo - Користувач почав перегляд інформації про подарунок.
+2024-11-27 08:50:32 [main] INFO  menu.menuForGift.DisplayGiftInfo - Інформація про подарунок: Подарунок на день народження
+Пакування: Колір коробки: Білий, Колір стрічки: Рожевий, Записка: З днем народження!
+Вміст:
+3| тип:chocolate| назва:Шоколадний батончик| ціна(грн):50.0| вага(г):30.0| рівень цукру(%):20.0| відсоток какао(%):45.0| начинка:Горіх| вид:Молочний
+6| тип:chocolate| назва:Шоколадний трюфель| ціна(грн):40.0| вага(г):20.0| рівень цукру(%):25.0| відсоток какао(%):70.0| начинка:Крем| вид:Чорний
+
+2024-11-27 08:50:32 [main] INFO  menu.menuForGift.DisplayGiftInfo - Загальна ціна подарунка: 90.0 грн
+2024-11-27 08:50:32 [main] INFO  menu.menuForGift.DisplayGiftInfo - Загальна вага подарунка: 50.0 г
+2024-11-27 08:51:04 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:51:04 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню дій з подарунком.
+2024-11-27 08:51:04 [main] INFO  menu.menuForGift.FindSweetBySugarInGift - Користувач почав пошук солодощів за рівнем цукру.
+2024-11-27 08:51:07 [main] INFO  menu.helpers.UserInputHelper - Користувач ввід дійсне додатне число: 12.0
+2024-11-27 08:51:08 [main] INFO  menu.helpers.UserInputHelper - Користувач ввід дійсне додатне число: 56.0
+2024-11-27 08:51:08 [main] INFO  menu.menuForGift.FindSweetBySugarInGift - Пошук солодощів з рівнем цукру від 12.0 до 56.0.
+2024-11-27 08:51:08 [main] INFO  menu.menuForGift.FindSweetBySugarInGift - Знайдено солодощі: 3| тип:chocolate| назва:Шоколадний батончик| ціна(грн):50.0| вага(г):30.0| рівень цукру(%):20.0| відсоток какао(%):45.0| начинка:Горіх| вид:Молочний з рівнем цукру 20.0%.
+2024-11-27 08:51:08 [main] INFO  menu.menuForGift.FindSweetBySugarInGift - Знайдено солодощі: 6| тип:chocolate| назва:Шоколадний трюфель| ціна(грн):40.0| вага(г):20.0| рівень цукру(%):25.0| відсоток какао(%):70.0| начинка:Крем| вид:Чорний з рівнем цукру 25.0%.
+2024-11-27 08:51:14 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 4
+2024-11-27 08:51:14 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 4 в меню Меню дій з подарунком.
+2024-11-27 08:51:14 [main] INFO  menu.menuForGift.RemoveSweetFromGift - Користувач почав видалення солодощів з подарунка.
+2024-11-27 08:51:16 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:51:16 [main] INFO  menu.menuForGift.RemoveSweetFromGift - Користувач ввів код для видалення: 3
+2024-11-27 08:51:16 [main] INFO  menu.menuForGift.RemoveSweetFromGift - Солодощі з кодом 3 успішно видалено з подарунка.
+2024-11-27 08:51:19 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 2
+2024-11-27 08:51:19 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 2 в меню Меню дій з подарунком.
+2024-11-27 08:51:19 [main] INFO  menu.menuForGift.DisplayGiftInfo - Користувач почав перегляд інформації про подарунок.
+2024-11-27 08:51:19 [main] INFO  menu.menuForGift.DisplayGiftInfo - Інформація про подарунок: Подарунок на день народження
+Пакування: Колір коробки: Білий, Колір стрічки: Рожевий, Записка: З днем народження!
+Вміст:
+6| тип:chocolate| назва:Шоколадний трюфель| ціна(грн):40.0| вага(г):20.0| рівень цукру(%):25.0| відсоток какао(%):70.0| начинка:Крем| вид:Чорний
+
+2024-11-27 08:51:19 [main] INFO  menu.menuForGift.DisplayGiftInfo - Загальна ціна подарунка: 40.0 грн
+2024-11-27 08:51:19 [main] INFO  menu.menuForGift.DisplayGiftInfo - Загальна вага подарунка: 20.0 г
+2024-11-27 08:51:23 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 5
+2024-11-27 08:51:23 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 5 в меню Меню дій з подарунком.
+2024-11-27 08:51:23 [main] INFO  menu.menuForGift.SortSweetByWeightInGift - Користувач почав сортування солодощів у подарунку за вагою.
+2024-11-27 08:51:23 [main] INFO  menu.menuForGift.SortSweetByWeightInGift - Солодощі в подарунку відсортовано за вагою.
+2024-11-27 08:51:26 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 0
+2024-11-27 08:51:26 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 0 в меню Меню дій з подарунком.
+2024-11-27 08:51:26 [main] INFO  menu.MenuGroup - Користувач вийшов з меню: Меню дій з подарунком.
+2024-11-27 08:51:29 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:51:29 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 08:51:35 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:51:35 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:51:35 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 08:51:35 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:51:35 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:51:35 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 08:51:38 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 4
+2024-11-27 08:51:38 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 4 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:51:38 [main] INFO  menu.menuForSweetsBase.FindSweetByPrice - Користувач почав пошук солодощів за ціною.
+2024-11-27 08:51:40 [main] INFO  menu.helpers.UserInputHelper - Користувач ввід дійсне додатне число: 12.0
+2024-11-27 08:51:42 [main] INFO  menu.helpers.UserInputHelper - Користувач ввід дійсне додатне число: 36.0
+2024-11-27 08:51:42 [main] INFO  menu.menuForSweetsBase.FindSweetByPrice - Користувач ввів діапазон цін: від 12.0 до 36.0 грн.
+2024-11-27 08:51:42 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:51:42 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.FindSweetByPrice.execute(FindSweetByPrice.java:29) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:51:46 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 0
+2024-11-27 08:51:46 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 0 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:51:46 [main] INFO  menu.MenuGroup - Користувач вийшов з меню: Меню для керування базою даних солодощів.
+2024-11-27 08:51:47 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 0
+2024-11-27 08:51:47 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 0 в меню Головне меню.
+2024-11-27 08:51:47 [main] INFO  menu.MenuGroup - Програму завершено користувачем через головне меню.
+2024-11-27 08:51:47 [main] INFO  menu.MenuGroup - Користувач вийшов з меню: Головне меню.
+2024-11-27 08:56:01 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:56:01 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 08:56:02 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:56:02 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:56:02 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 08:56:02 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:56:02 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:56:02 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 08:57:36 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:57:36 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 08:57:37 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:57:37 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:57:37 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 08:57:37 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:57:37 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:57:37 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 08:58:34 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:58:34 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 08:58:35 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 08:58:35 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 08:58:35 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 08:58:35 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 08:58:35 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 08:58:35 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:00:50 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:00:50 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:00:51 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:00:51 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:00:51 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:00:51 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:00:51 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:00:51 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:11:23 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:11:23 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:11:25 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:11:25 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:11:25 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:11:25 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:11:25 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:11:31 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:12:20 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:12:20 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:12:21 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:12:21 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:12:21 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:12:21 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:12:21 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:12:36 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:20:12 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:20:12 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:20:13 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:20:13 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:20:13 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:20:13 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:20:13 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:20:19 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:20:42 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:20:42 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:20:43 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:20:43 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:20:43 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:20:43 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:20:43 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:20:49 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:24:41 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:24:41 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:24:41 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:24:41 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:24:41 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:24:41 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:24:41 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:24:49 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:25:09 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:25:09 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:25:09 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:25:09 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:25:09 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:25:09 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:25:09 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:25:15 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:52:39 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:52:39 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:52:40 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:52:40 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:52:40 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:52:40 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:52:40 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:52:45 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:54:33 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:54:33 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:54:33 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:54:33 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:54:33 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:54:33 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:54:33 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:54:39 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 11:59:06 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:59:06 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 11:59:07 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 11:59:07 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 11:59:07 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 11:59:07 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 11:59:07 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 11:59:13 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 12:06:25 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:06:25 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 12:06:26 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:06:26 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 12:06:26 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 12:06:26 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 12:06:26 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 12:06:32 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 12:13:35 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:13:35 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 12:13:36 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:13:36 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 12:13:36 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 12:13:36 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 12:13:36 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 12:13:41 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 12:14:28 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:14:28 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 12:14:30 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:14:30 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 12:14:30 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 12:14:30 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 12:14:30 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 12:14:35 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 12:17:17 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:17:17 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 12:17:18 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:17:18 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 12:17:18 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 12:17:18 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 12:17:18 [main] ERROR menu.helpers.SweetBaseHelper - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 12:17:18 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
+2024-11-27 12:24:54 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:24:54 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Головне меню.
+2024-11-27 12:24:56 [main] INFO  menu.helpers.UserInputHelper - Користувач ввів дійсне додатне ціле число: 3
+2024-11-27 12:24:56 [main] INFO  menu.MenuGroup - Користувач зробив вибір: 3 в меню Меню для керування базою даних солодощів.
+2024-11-27 12:24:56 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Користувач почав перегляд бази даних солодощів.
+2024-11-27 12:24:56 [main] INFO  menu.helpers.SweetBaseHelper - Завантаження солодощів з файлу: sweets_database.txt
+2024-11-27 12:24:56 [main] ERROR ErrorLogger - Помилка розбору загальних властивостей: For input string: "ххх"
+java.lang.NumberFormatException: For input string: "ххх"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:938) ~[?:?]
+	at menu.helpers.SweetBaseHelper.parseCommonProperties(SweetBaseHelper.java:81) [classes/:?]
+	at menu.helpers.SweetBaseHelper.parseSweetFromLine(SweetBaseHelper.java:57) [classes/:?]
+	at menu.helpers.SweetBaseHelper.loadSweetsFromFile(SweetBaseHelper.java:31) [classes/:?]
+	at menu.menuForSweetsBase.DisplaySweetsBase.execute(DisplaySweetsBase.java:24) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at menu.MenuGroup.processChoice(MenuGroup.java:78) [classes/:?]
+	at menu.MenuGroup.execute(MenuGroup.java:45) [classes/:?]
+	at main.Main.main(Main.java:22) [classes/:?]
+2024-11-27 12:24:57 [main] INFO  menu.menuForSweetsBase.DisplaySweetsBase - Відображено 9 солодощів з бази даних.
