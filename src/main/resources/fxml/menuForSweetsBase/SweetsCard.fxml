@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.menuForSweetsBase.SweetsCardController"
+      spacing="5"
+      styleClass="sweets-card">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <HBox alignment="CENTER">
+        <ImageView fx:id="imageView"
+                   fitWidth="100" fitHeight="100"
+                   preserveRatio="true"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Label fx:id="nameLbl" styleClass="sweets-name"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label fx:id="typeLbl" style="-fx-text-fill: grey;"/>
+    </HBox>
+
+    <Label fx:id="priceLbl"/>
+    <Label fx:id="weightLbl"/>
+    <Label fx:id="sugarLbl"/>
+
+    <Label fx:id="detailLbl" wrapText="true"/>
+
+    <Label fx:id="qtyLbl"
+           styleClass="quantity-label"
+           visible="false"/>
+
+    <HBox fx:id="actionsBox"
+          spacing="6"
+          alignment="CENTER"/>
+</VBox>

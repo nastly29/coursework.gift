@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.menuForGift.SortSweetByWeightInGift"
+      spacing="10"
+      alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup"/>
+    </fx:define>
+
+    <Label text="Напрям сортування за вагою:" styleClass="title-label"/>
+
+    <HBox spacing="10" alignment="TOP_CENTER">
+        <RadioButton fx:id="ascBtn" text="За зростанням" toggleGroup="$toggleGroup"/>
+        <RadioButton text="За спаданням" toggleGroup="$toggleGroup"/>
+    </HBox>
+
+    <Button text="Показати результат" maxWidth="Infinity" onAction="#onSort"/>
+
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" fitToHeight="true" visible="false" managed="false">
+        <FlowPane fx:id="flowPane" hgap="10" vgap="10"/>
+    </ScrollPane>
+</VBox>

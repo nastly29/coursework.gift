@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.menuForGift.DisplayGiftInfo"
+      spacing="10">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label fx:id="infoLabel" wrapText="true" alignment="CENTER" styleClass="title-label"/>
+
+    <Label fx:id="titleLabel" styleClass="title-label"/>
+    <VBox spacing="6" style="-fx-padding:10;">
+        <Label fx:id="boxColorLabel" styleClass="info-label"/>
+        <Label fx:id="ribbonColorLabel" styleClass="info-label"/>
+        <Label fx:id="messageLabel" styleClass="info-label"/>
+    </VBox>
+
+
+    <ScrollPane fitToWidth="true" fx:id="scrollPane">
+        <FlowPane fx:id="flowPane" hgap="10" vgap="10"/>
+    </ScrollPane>
+
+    <Label fx:id="totalsLabel"/>
+</VBox>

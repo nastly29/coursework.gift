@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <TabPane fx:id="tabPane">
+            <Tab text="Подарунок">
+                <fx:include source="GiftTab.fxml"/>
+            </Tab>
+            <Tab text="База солодощів">
+                <fx:include source="BaseTab.fxml"/>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.menuForGift.CreateGift"
+      spacing="10"
+      alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Параметри подарунка" styleClass="title-label"/>
+    <Label text="Назва"/>
+    <TextField fx:id="nameField" promptText="Введіть коротку, але яскраву назву подарунка" maxWidth="550"/>
+    <Label text="Привітання"/>
+    <TextField fx:id="messageField" promptText="Напишіть кілька слів для отримувача" maxWidth="550"/>
+    <Label text="Колір коробки"/>
+    <ComboBox fx:id="boxColorCB" promptText="Немає" maxWidth="550"/>
+    <Label text="Колір стрічки"/>
+    <ComboBox fx:id="ribbonColorCB" promptText="Немає" maxWidth="550"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="createBtn" text="Створити" onAction="#onCreate"/>
+        <Button fx:id="saveBtn" text="Зберегти зміни" onAction="#onSave" disable="true"/>
+    </HBox>
+</VBox>
