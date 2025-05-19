@@ -2,10 +2,7 @@ package controllers.menuForGift;
 
 import domain.sweets.Sweets;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.FlowPane;
 import service.GiftService;
 import controllers.SweetsViewFactory;
@@ -16,9 +13,10 @@ public class FindSweetBySugarInGift {
     private final GiftService giftService;
 
     @FXML public ScrollPane resultPane;
-    @FXML private TextField minField;
-    @FXML private TextField maxField;
-    @FXML private FlowPane flowPane;
+    @FXML public Button searchBtn;
+    @FXML TextField minField;
+    @FXML TextField maxField;
+    @FXML FlowPane flowPane;
 
     public FindSweetBySugarInGift(GiftService giftService) {
         this.giftService = giftService;
@@ -32,7 +30,7 @@ public class FindSweetBySugarInGift {
     }
 
     @FXML
-    private void onSearch() {
+    public void onSearch() {
         flowPane.getChildren().clear();
         double min, max;
 

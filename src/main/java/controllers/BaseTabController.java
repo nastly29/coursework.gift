@@ -1,13 +1,11 @@
 package controllers;
 
-import controllers.menuForSweetsBase.DisplaySweetsBase;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 
 public class BaseTabController {
@@ -17,7 +15,7 @@ public class BaseTabController {
     @FXML private StackPane contentPane;
 
     @FXML
-    private void initialize() {
+    void initialize() {
         contentPane.getChildren().setAll(introPane);
     }
 

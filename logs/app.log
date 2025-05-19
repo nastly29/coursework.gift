@@ -1,0 +1,355 @@
+19:44:42.428 [JavaFX Application Thread] INFO  main.MainApp - Застосунок успішно запущено
+19:45:05.000 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/CreateGift.fxml успішно завантажено
+19:45:05.001 [JavaFX Application Thread] DEBUG controllers.GiftTabController - Виконано after-обробку для контролера: CreateGift
+19:45:28.617 [JavaFX Application Thread] INFO  service.GiftService - Подарунок створено/оновлено: Подарунок для сестри, упаковка: domain.Package@26125b3a
+19:45:30.806 [JavaFX Application Thread] INFO  repository.DbUtil - SQL Server JDBC Driver завантажено успішно.
+19:45:31.374 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:31.457 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:31.458 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:31.461 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:31.462 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:31.464 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:31.465 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:31.465 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:31.466 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:31.466 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:31.466 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:31.466 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:31.467 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:31.467 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:31.467 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:31.467 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:31.550 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 0
+19:45:31.568 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:31.581 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:31.595 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 0
+19:45:31.634 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 0
+19:45:31.644 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:31.653 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:45:31.661 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:31.671 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:31.678 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:31.687 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:31.697 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:31.708 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:31.715 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:31.716 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/AddSweetToGift.fxml успішно завантажено
+19:45:33.660 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Candy@5342732
+19:45:33.698 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:33.704 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:33.705 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:33.711 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:33.712 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:33.713 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:33.714 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:33.714 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:33.714 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:33.715 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:33.715 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:33.715 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:33.716 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:33.716 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:33.716 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:33.716 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:33.734 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:45:33.744 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:33.759 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:33.771 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 0
+19:45:33.806 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 0
+19:45:33.812 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:33.820 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:45:33.826 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:33.832 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:33.842 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:33.850 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:33.856 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:33.862 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:33.868 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:36.138 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@4e43fbe2
+19:45:36.166 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:36.171 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:36.172 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:36.173 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:36.174 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:36.174 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:36.175 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:36.175 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:36.175 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:36.175 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:36.175 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:36.176 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:36.176 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:36.176 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:36.176 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:36.176 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:36.188 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:45:36.197 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:36.210 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:36.219 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:36.292 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 0
+19:45:36.298 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:36.304 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:45:36.310 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:36.319 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:36.326 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:36.331 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:36.337 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:36.343 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:36.350 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:38.165 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@2df34d0d
+19:45:38.199 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:38.204 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:38.204 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:38.205 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:38.206 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:38.207 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:38.207 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:38.208 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:38.208 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:38.208 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:38.209 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:38.209 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:38.209 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:38.210 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:38.210 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:38.210 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:38.224 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:45:38.230 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:38.238 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:38.245 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:38.274 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:45:38.283 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:38.290 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:45:38.295 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:38.300 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:38.306 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:38.313 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:38.318 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:38.324 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:38.330 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:40.181 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/FindSweetBySugarInGift.fxml успішно завантажено
+19:45:45.209 [JavaFX Application Thread] INFO  service.GiftService - Знайдено 3 солодощів за вмістом цукру в межах 1.0–50.0
+19:45:45.218 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:45:45.224 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:45.255 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:45:49.688 [JavaFX Application Thread] INFO  service.GiftService - Солодощі видалено з подарунка: domain.sweets.Candy@5342732
+19:45:49.689 [JavaFX Application Thread] INFO  service.GiftService - Знайдено 2 солодощів за вмістом цукру в межах 1.0–50.0
+19:45:49.694 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:49.720 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:45:51.098 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:51.104 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:51.104 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:51.105 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:51.106 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:51.107 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:51.107 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:51.107 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:51.107 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:51.107 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:51.108 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:51.108 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:51.108 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:51.108 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:51.108 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:51.108 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:51.119 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 0
+19:45:51.132 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:51.142 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:51.148 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:51.196 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:45:51.203 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:51.219 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:45:51.226 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:51.236 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:51.242 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:51.248 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:51.252 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:51.256 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:51.262 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:51.263 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/AddSweetToGift.fxml успішно завантажено
+19:45:55.264 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Gingerbread@36750d33
+19:45:55.290 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:45:55.295 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:45:55.295 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:45:55.296 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:45:55.296 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:45:55.297 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:45:55.297 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:45:55.297 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:45:55.297 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:45:55.298 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:45:55.298 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:45:55.307 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 0
+19:45:55.312 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:45:55.323 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:45:55.328 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:55.350 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:45:55.354 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:45:55.359 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:45:55.363 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:45:55.366 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:45:55.370 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:45:55.374 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:45:55.378 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:45:55.381 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:45:55.384 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:45:57.718 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/SortSweetByWeightInGift.fxml успішно завантажено
+19:45:59.383 [JavaFX Application Thread] INFO  service.GiftService - Солодощі відсортовано за вагою у порядку зростання
+19:45:59.387 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:45:59.392 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:45:59.428 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:01.929 [JavaFX Application Thread] INFO  service.GiftService - Солодощі відсортовано за вагою у порядку спадання
+19:46:01.954 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:01.958 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:46:01.961 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:03.557 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 1
+19:46:03.581 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:03.584 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:03.589 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 146.0
+19:46:03.589 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 250.0
+19:46:03.589 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/DisplayGiftInfo.fxml успішно завантажено
+19:46:05.257 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@4e43fbe2
+19:46:05.262 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 2
+19:46:05.285 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:05.288 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:05.289 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 196.0
+19:46:05.289 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 340.0
+19:46:05.400 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@4e43fbe2
+19:46:05.404 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 3
+19:46:05.432 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:05.436 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:05.437 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 246.0
+19:46:05.437 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 430.0
+19:46:05.623 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@4e43fbe2
+19:46:05.629 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 4
+19:46:05.652 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 1
+19:46:05.656 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:05.656 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 296.0
+19:46:05.656 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 520.0
+19:46:07.755 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@2df34d0d
+19:46:07.759 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 4
+19:46:07.783 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 2
+19:46:07.787 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:07.787 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 352.0
+19:46:07.787 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 610.0
+19:46:07.911 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@2df34d0d
+19:46:07.915 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 4
+19:46:07.941 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 3
+19:46:07.946 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:07.946 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 408.0
+19:46:07.946 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 700.0
+19:46:08.138 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Chocolate@2df34d0d
+19:46:08.144 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 4
+19:46:08.167 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 4
+19:46:08.170 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:08.171 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 464.0
+19:46:08.171 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 790.0
+19:46:11.710 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:46:11.714 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:46:11.715 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:46:11.716 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:46:11.716 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:46:11.717 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:46:11.717 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:46:11.717 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:46:11.717 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:46:11.717 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:46:11.718 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:46:11.718 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:46:11.718 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:46:11.718 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:46:11.718 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:46:11.718 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:46:11.726 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 0
+19:46:11.733 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:46:11.741 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:46:11.746 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 4
+19:46:11.767 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 4
+19:46:11.770 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:46:11.773 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 1
+19:46:11.777 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:46:11.780 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:46:11.784 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:46:11.786 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:46:11.794 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:46:11.796 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:46:11.798 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:46:11.799 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/AddSweetToGift.fxml успішно завантажено
+19:46:13.955 [JavaFX Application Thread] INFO  service.GiftService - Подарунок скинуто
+19:46:17.458 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/CreateGift.fxml успішно завантажено
+19:46:17.458 [JavaFX Application Thread] DEBUG controllers.GiftTabController - Виконано after-обробку для контролера: CreateGift
+19:46:43.772 [JavaFX Application Thread] INFO  service.GiftService - Подарунок створено/оновлено: Подарунок, упаковка: domain.Package@70f2fe88
+19:46:51.568 [JavaFX Application Thread] INFO  service.GiftService - Подарунок створено/оновлено: Подарунок, упаковка: domain.Package@5b5fde12
+19:46:54.470 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/DisplayGiftInfo.fxml успішно завантажено
+19:46:56.879 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:46:56.903 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:46:56.904 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:46:56.915 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:46:56.917 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:46:56.921 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:46:56.922 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:46:56.923 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:46:56.923 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:46:56.923 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:46:56.923 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:46:56.936 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 0
+19:46:56.943 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:46:56.952 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:46:56.957 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 0
+19:46:56.992 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 0
+19:46:56.996 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:46:56.999 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:46:57.002 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:46:57.006 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:46:57.010 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:46:57.013 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:46:57.018 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:46:57.021 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:46:57.025 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:46:57.025 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/AddSweetToGift.fxml успішно завантажено
+19:46:58.253 [JavaFX Application Thread] INFO  service.GiftService - Додано до подарунка: domain.sweets.Candy@1c85d632
+19:46:58.284 [JavaFX Application Thread] DEBUG repository.DbUtil - Підключення до БД успішне: jdbc:sqlserver://localhost:1433;databaseName=SweetsDb;encrypt=false
+19:46:58.304 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 154
+19:46:58.305 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 155
+19:46:58.315 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 156
+19:46:58.316 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 157
+19:46:58.321 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 158
+19:46:58.321 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 159
+19:46:58.321 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 160
+19:46:58.321 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Candy з кодом 162
+19:46:58.321 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 163
+19:46:58.322 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Chocolate з кодом 164
+19:46:58.322 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 165
+19:46:58.322 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Jelly з кодом 166
+19:46:58.322 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 167
+19:46:58.322 [JavaFX Application Thread] DEBUG repository.SweetsMapper - Зчитано об'єкт Gingerbread з кодом 168
+19:46:58.322 [JavaFX Application Thread] INFO  repository.SweetsRepository - Завантажено 14 солодощів з БД
+19:46:58.330 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:46:58.334 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска "Золотий ключик"]: 0
+19:46:58.341 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні ведмедики]: 0
+19:46:58.344 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Лімо молочний"]: 0
+19:46:58.367 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад "Темний з фундуком"]: 0
+19:46:58.370 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Іриска «Крем-брюле»]: 0
+19:46:58.373 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник "Медовий"]: 0
+19:46:58.375 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель «М’ятна»]: 0
+19:46:58.378 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад темний з апельсином]: 0
+19:46:58.381 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Шоколад молочний з родзинками]: 0
+19:46:58.383 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Желейні серця]: 0
+19:46:58.386 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Мармелад «Цитрус»]: 0
+19:46:58.390 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Кулька»]: 0
+19:46:58.392 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Пряник «Сніговик»]: 0
+19:46:59.341 [JavaFX Application Thread] DEBUG service.GiftService - Кількість солодощів [Карамель "Дюшес"]: 1
+19:46:59.341 [JavaFX Application Thread] DEBUG service.GiftService - Загальна ціна подарунка: 12.5
+19:46:59.341 [JavaFX Application Thread] DEBUG service.GiftService - Загальна вага подарунка: 50.0
+19:46:59.341 [JavaFX Application Thread] INFO  controllers.GiftTabController - Екран /menuForGift/DisplayGiftInfo.fxml успішно завантажено
+19:47:03.027 [JavaFX Application Thread] INFO  service.GiftService - Подарунок скинуто

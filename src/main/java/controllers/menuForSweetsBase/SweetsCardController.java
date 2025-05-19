@@ -10,6 +10,7 @@ import javafx.scene.layout.HBox;
 import service.GiftService;
 import utils.TableAction;
 import java.io.ByteArrayInputStream;
+import java.util.Locale;
 
 public class SweetsCardController {
     @FXML private ImageView imageView;
@@ -45,31 +46,31 @@ public class SweetsCardController {
     private void setupBasicInfo() {
         nameLbl.setText(s.getName());
         typeLbl.setText(s.getSweetType());
-        priceLbl.setText(String.format("Ціна: %.2f грн", s.getPrice()));
-        weightLbl.setText(String.format("Вага: %.2f г", s.getWeight()));
-        sugarLbl.setText(String.format("Цукор: %.2f%%", s.getSugarContent()));
+        priceLbl.setText(String.format(Locale.US, "Ціна: %.2f грн", s.getPrice()));
+        weightLbl.setText(String.format(Locale.US, "Вага: %.2f г", s.getWeight()));
+        sugarLbl.setText(String.format(Locale.US, "Цукор: %.2f%%", s.getSugarContent()));
     }
 
     private void setupDetail() {
         switch (s) {
             case Candy c ->
-                    detailLbl.setText(String.format(
-                            "Начинка: %s%nВид цукерки: %s",
-                            c.getFilling(), c.getType()
-                    ));
+                    detailLbl.setText(
+                            "Начинка: " + c.getFilling() +
+                                    "\nВид цукерки: " + c.getType()
+                    );
             case Chocolate ch ->
                     detailLbl.setText(String.format(
-                            "%% какао: %.0f%nНачинка: %s%nВид шоколаду: %s",
+                            "%% какао: %.0f\nНачинка: %s\nВид шоколаду: %s",
                             ch.getCocoaPercentage(), ch.getFilling(), ch.getType()
                     ));
             case Jelly j ->
                     detailLbl.setText(String.format(
-                            "Смак: %s%nФорма: %s",
+                            "Смак: %s\nФорма: %s",
                             j.getFruityTaste(), j.getShape()
                     ));
             case Gingerbread g ->
                     detailLbl.setText(String.format(
-                            "Форма: %s%nГлазурований: %s",
+                            "Форма: %s\nГлазурований: %s",
                             g.getShape(), g.isIced() ? "так" : "ні"
                     ));
             default ->

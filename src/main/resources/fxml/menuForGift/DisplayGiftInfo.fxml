@@ -23,7 +23,6 @@
         <Label fx:id="messageLabel" styleClass="info-label"/>
     </VBox>
 
-
     <ScrollPane fitToWidth="true" fx:id="scrollPane">
         <FlowPane fx:id="flowPane" hgap="10" vgap="10"/>
     </ScrollPane>

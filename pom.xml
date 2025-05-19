@@ -44,6 +44,7 @@
             <scope>test</scope>
         </dependency>
 
+
         <!--JavaFX-->
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -54,6 +55,17 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-activation</artifactId>
+            <version>2.0.1</version>
         </dependency>
 
         <!--база-->
@@ -81,6 +93,12 @@
             <artifactId>jakarta.mail</artifactId>
             <version>2.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-junit5</artifactId>
+            <version>4.0.16-alpha</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -90,7 +108,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M9</version>
                 <configuration>
-                    <argLine>-XX:+EnableDynamicAgentLoading -Xshare:off --add-modules java.activation,java.xml</argLine>
+                   <argLine>-XX:+EnableDynamicAgentLoading -Xshare:off
+                        --add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
+                        --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
+                   </argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -99,6 +120,14 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>main.MainApp</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>22</source>
+                    <target>22</target>
                 </configuration>
             </plugin>
         </plugins>

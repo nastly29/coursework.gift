@@ -18,13 +18,17 @@ import java.util.ResourceBundle;
 
 public class AddNewSweetToBase implements Initializable {
 
+    @FXML public ButtonType saveButtonType;
     @FXML private GridPane form;
-    @FXML private TextField nameField, weightField, sugarField, priceField;
-    @FXML private ComboBox<String> typeCB;
-    @FXML private VBox detailBox;
+    @FXML TextField nameField;
+    @FXML TextField weightField;
+    @FXML TextField sugarField;
+    @FXML TextField priceField;
+    @FXML ComboBox<String> typeCB;
+    @FXML VBox detailBox;
     @FXML private Button imgBtn, saveBtn;
-    @FXML private Label imgLabel;
-
+    @FXML Label imgLabel;
+    public DialogPane dialogPane;
     private byte[] imageData;
 
     @Override
@@ -104,7 +108,7 @@ public class AddNewSweetToBase implements Initializable {
         try {
             String nm = nameField.getText().trim();
             double wt = Double.parseDouble(weightField.getText().trim());
-            int sc    = Integer.parseInt(sugarField.getText().trim());
+            double sc = Double.parseDouble(sugarField.getText().trim());
             double pr = Double.parseDouble(priceField.getText().trim());
             String tp = typeCB.getValue();
             Sweets sweet = switch (tp) {

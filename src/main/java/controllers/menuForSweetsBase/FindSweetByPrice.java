@@ -16,8 +16,8 @@ import java.util.ResourceBundle;
 public class FindSweetByPrice implements Initializable {
 
     @FXML public ScrollPane scrollPane;
-    @FXML private TextField minField;
-    @FXML private TextField maxField;
+    @FXML TextField minField;
+    @FXML TextField maxField;
     @FXML private Button    searchBtn;
     @FXML private FlowPane  flowPane;
 
@@ -29,7 +29,7 @@ public class FindSweetByPrice implements Initializable {
     }
 
     @FXML
-    private void onSearch() {
+    public void onSearch() {
         flowPane.getChildren().clear();
 
         double min, max;
@@ -40,28 +40,31 @@ public class FindSweetByPrice implements Initializable {
             new Alert(Alert.AlertType.ERROR, "Невірний формат числа!").showAndWait();
             return;
         }
+        onSearch(min,max);
+    }
 
+    @FXML
+    public void onSearch(double min, double max) {
+        flowPane.getChildren().clear();
         List<Sweets> found = SweetsRepository.findSweetsByPrice(min, max);
         if (found.isEmpty()) {
             flowPane.getChildren().add(new Label("Нічого не знайдено."));
+            scrollPane.setVisible(false);
+            scrollPane.setManaged(false);
         } else {
             for (Sweets s : found) {
                 flowPane.getChildren().add(
-                        SweetsViewFactory.createCard(
-                                s,
-                                null,
-                                new TableAction("Видалити", sw -> {
-                                    try {
-                                        if (SweetsRepository.deleteSweetFromDb(sw.getCode())) {
-                                            onSearch();
-                                        } else {
-                                            new Alert(Alert.AlertType.ERROR, "Не вдалося видалити солодощі.").showAndWait();
-                                        }
-                                    } catch (SQLException ex) {
-                                        new Alert(Alert.AlertType.ERROR, "Помилка при видаленні: " + ex.getMessage()).showAndWait();
-                                    }
-                                })
-                        )
+                        SweetsViewFactory.createCard(s, null, new TableAction("Видалити", sw -> {
+                            try {
+                                if (SweetsRepository.deleteSweetFromDb(sw.getCode())) {
+                                    onSearch(min, max); // повторно
+                                } else {
+                                    new Alert(Alert.AlertType.ERROR, "Не вдалося видалити солодощі.").showAndWait();
+                                }
+                            } catch (SQLException ex) {
+                                new Alert(Alert.AlertType.ERROR, "Помилка при видаленні: " + ex.getMessage()).showAndWait();
+                            }
+                        }))
                 );
             }
             scrollPane.setVisible(true);

@@ -27,7 +27,9 @@
         <TextField fx:id="minField" promptText="мін %" maxWidth="70"/>
         <Label text="до"/>
         <TextField fx:id="maxField" promptText="макс %" maxWidth="70"/>
-        <Button text="Пошук" onAction="#onSearch"/>
+        <Button fx:id="searchBtn"
+                text="Пошук"
+                onAction="#onSearch"/>
     </HBox>
 
     <ScrollPane fx:id="resultPane"

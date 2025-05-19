@@ -18,15 +18,18 @@ import java.util.ResourceBundle;
 
 public class EditSweet implements Initializable {
     @FXML public ButtonType saveButtonType;
-    @FXML private TextField nameField, weightField, sugarField, priceField;
-    @FXML private ComboBox<String> typeCB;
-    @FXML private VBox detailBox;
-    @FXML private Button imgBtn;
-    @FXML private Label imgLabel;
-    @FXML private DialogPane dialogPane;
+    @FXML TextField nameField;
+    @FXML TextField weightField;
+    @FXML TextField sugarField;
+    @FXML TextField priceField;
+    @FXML ComboBox<String> typeCB;
+    @FXML VBox detailBox;
+    @FXML Button imgBtn;
+    @FXML Label imgLabel;
+    @FXML DialogPane dialogPane;
 
     private final Sweets sweet;
-    private byte[] imageData;
+    byte[] imageData;
     private Dialog<?> dialog;
 
     public EditSweet(Sweets sweet) {

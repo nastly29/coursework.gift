@@ -21,7 +21,7 @@ import java.util.ResourceBundle;
 public class DisplaySweetsBase implements Initializable {
     private static final Logger log = LoggerFactory.getLogger(DisplaySweetsBase.class);
 
-    @FXML private FlowPane flowPane;
+    @FXML FlowPane flowPane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -59,7 +59,7 @@ public class DisplaySweetsBase implements Initializable {
         }
     }
 
-    private void openEditDialog(Sweets sw) {
+    void openEditDialog(Sweets sw) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/menuForSweetsBase/EditSweet.fxml"));
             loader.setController(new EditSweet(sw));

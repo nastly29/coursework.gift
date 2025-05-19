@@ -2,6 +2,7 @@ package controllers.menuForGift;
 
 import domain.sweets.Sweets;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.FlowPane;
@@ -13,6 +14,7 @@ public class SortSweetByWeightInGift {
     private final GiftService giftService;
 
     @FXML public ScrollPane scrollPane;
+    @FXML public Button sortBtn;
     @FXML private RadioButton ascBtn;
     @FXML private FlowPane flowPane;
 

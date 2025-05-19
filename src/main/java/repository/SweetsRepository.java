@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class SweetsRepository {
-    private static final SweetsMapper mapper = new SweetsMapper();
+    static SweetsMapper mapper = new SweetsMapper();
     private static final Logger log = LoggerFactory.getLogger(SweetsRepository.class);
 
     // Завантажуємо всі SQL-запити з properties
@@ -26,6 +26,8 @@ public class SweetsRepository {
             throw new ExceptionInInitializerError("Помилка: " + e.getMessage());
         }
     }
+
+    public SweetsRepository(Properties props) {}
 
     // Завантаження всіх солодощів з бази даних
     public static List<Sweets> loadSweetsFromDb() {
@@ -98,7 +100,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void insertChocolateDetails(Connection conn, int code, Chocolate chocolate) throws SQLException {
+    static void insertChocolateDetails(Connection conn, int code, Chocolate chocolate) throws SQLException {
         String insertChocolate = sql.getProperty("insert.chocolateDetails");
         try (PreparedStatement ps = conn.prepareStatement(insertChocolate)) {
             ps.setInt(1, code);
@@ -109,7 +111,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void insertGingerbreadDetails(Connection conn, int code, Gingerbread gingerbread) throws SQLException {
+    static void insertGingerbreadDetails(Connection conn, int code, Gingerbread gingerbread) throws SQLException {
         String insertGingerbread = sql.getProperty("insert.gingerbreadDetails");
         try (PreparedStatement ps = conn.prepareStatement(insertGingerbread)) {
             ps.setInt(1, code);
@@ -119,7 +121,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void insertJellyDetails(Connection conn, int code, Jelly jelly) throws SQLException {
+    static void insertJellyDetails(Connection conn, int code, Jelly jelly) throws SQLException {
         String insertJelly = sql.getProperty("insert.jellyDetails");
         try (PreparedStatement ps = conn.prepareStatement(insertJelly)) {
             ps.setInt(1, code);
@@ -224,7 +226,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void updateChocolateDetails(Connection conn, int code, Chocolate ch) throws SQLException {
+    static void updateChocolateDetails(Connection conn, int code, Chocolate ch) throws SQLException {
         String q = sql.getProperty("update.chocolateDetails");
         try (PreparedStatement ps = conn.prepareStatement(q)) {
             ps.setDouble(1, ch.getCocoaPercentage());
@@ -235,7 +237,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void updateJellyDetails(Connection conn, int code, Jelly j) throws SQLException {
+    static void updateJellyDetails(Connection conn, int code, Jelly j) throws SQLException {
         String q = sql.getProperty("update.jellyDetails");
         try (PreparedStatement ps = conn.prepareStatement(q)) {
             ps.setString(1, j.getFruityTaste());
@@ -245,7 +247,7 @@ public class SweetsRepository {
         }
     }
 
-    private static void updateGingerbreadDetails(Connection conn, int code, Gingerbread g) throws SQLException {
+    static void updateGingerbreadDetails(Connection conn, int code, Gingerbread g) throws SQLException {
         String q = sql.getProperty("update.gingerbreadDetails");
         try (PreparedStatement ps = conn.prepareStatement(q)) {
             ps.setString(1, g.getShape());

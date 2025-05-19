@@ -17,9 +17,9 @@ import java.util.ResourceBundle;
 public class AddSweetToGift implements Initializable {
     private final GiftService giftService;
 
-    @FXML private Label infoLabel;
-    @FXML private ScrollPane scrollPane;
-    @FXML private FlowPane flowPane;
+    @FXML Label infoLabel;
+    @FXML ScrollPane scrollPane;
+    @FXML FlowPane flowPane;
 
     public AddSweetToGift(GiftService giftService) {
         this.giftService = giftService;

@@ -30,7 +30,7 @@
         <RadioButton text="За спаданням" toggleGroup="$toggleGroup"/>
     </HBox>
 
-    <Button text="Показати результат" maxWidth="Infinity" onAction="#onSort"/>
+    <Button  fx:id="sortBtn" text="Показати результат" maxWidth="Infinity" onAction="#onSort"/>
 
     <ScrollPane fx:id="scrollPane" fitToWidth="true" fitToHeight="true" visible="false" managed="false">
         <FlowPane fx:id="flowPane" hgap="10" vgap="10"/>

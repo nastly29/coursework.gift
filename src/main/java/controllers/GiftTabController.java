@@ -16,8 +16,8 @@ public class GiftTabController {
     private static final Logger log = LoggerFactory.getLogger(GiftTabController.class);
 
     @FXML public StackPane introPane;
-    @FXML private StackPane contentPane;
-    @FXML private Button btnAddSweet, btnDisplay, btnSearchSugar, btnSortWeight, btnFinish;
+    @FXML StackPane contentPane;
+    @FXML Button btnAddSweet, btnDisplay, btnSearchSugar, btnSortWeight, btnFinish;
 
     private final GiftService giftService;
 
@@ -30,13 +30,14 @@ public class GiftTabController {
         disableGiftActions();
     }
 
-    @FXML private void onParams() { load("/menuForGift/CreateGift.fxml", c -> ((CreateGift)c).setOnGiftCreated(this::enableGiftActions)); }
-    @FXML private void onAddSweet() { load("/menuForGift/AddSweetToGift.fxml",null); }
-    @FXML private void onDisplay() { load("/menuForGift/DisplayGiftInfo.fxml",null); }
-    @FXML private void onSearchSugar() { load("/menuForGift/FindSweetBySugarInGift.fxml",null); }
-    @FXML private void onSortWeight() { load("/menuForGift/SortSweetByWeightInGift.fxml",null); }
+    @FXML void onParams() { load("/menuForGift/CreateGift.fxml", c -> ((CreateGift)c).setOnGiftCreated(this::enableGiftActions)); }
+    @FXML void onAddSweet() { load("/menuForGift/AddSweetToGift.fxml",null); }
+    @FXML void onDisplay() { load("/menuForGift/DisplayGiftInfo.fxml",null); }
+    @FXML void onSearchSugar() { load("/menuForGift/FindSweetBySugarInGift.fxml",null); }
+    @FXML void onSortWeight() { load("/menuForGift/SortSweetByWeightInGift.fxml",null); }
 
-    @FXML private void onFinish() {
+    @FXML
+    void onFinish() {
         giftService.reset();
         contentPane.getChildren().setAll(introPane);
         disableGiftActions();
@@ -66,7 +67,7 @@ public class GiftTabController {
         }
     }
 
-    private void enableGiftActions() {
+    void enableGiftActions() {
         btnAddSweet.setDisable(false);
         btnDisplay.setDisable(false);
         btnSearchSugar.setDisable(false);
